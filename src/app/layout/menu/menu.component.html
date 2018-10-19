@@ -1,0 +1,20 @@
+<nav class="navbar navbar-inverse" style="border-radius: 0px">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Advence</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a>Home</a></li>
+      <li ><a [routerLink]="['comment']">Deactive</a></li>
+      <li ><a [routerLink]="['search']">Search LiveTime</a></li>
+      <li ><a [routerLink]="['muitiselect']">MultiSelect</a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><img style="width: 50px; border-radius: 100%" src="{{User.img}}"></li>
+      <li><a href="#">{{User.name}}</a></li>
+
+      <li><a (click)="logOut()">Logout</a></li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,5 @@
+<mat-form-field>
+  <mat-select multiple>
+    <mat-option *ngFor="let topping of Users" [value]="topping" (click)="addArray(topping)">{{topping.name}}</mat-option>
+  </mat-select>
+</mat-form-field>

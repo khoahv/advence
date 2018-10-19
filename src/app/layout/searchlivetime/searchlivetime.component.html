@@ -1,0 +1,6 @@
+<input
+    (keyup)="searchTerm$.next($event.target.value)">
+
+<ul *ngIf="results">
+  {{results}}
+</ul>

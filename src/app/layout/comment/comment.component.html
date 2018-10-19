@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>CandeActive</h2>
+  <p>Comment của bạn: </p>
+  <form  #form="ngForm">
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea [(ngModel)]="comment" name="comment" class="form-control" rows="5" id="comment"></textarea> 
+    </div>
+    <button class="btn-success" (click)="submit()">Submit</button>
+  </form>
+</div>
